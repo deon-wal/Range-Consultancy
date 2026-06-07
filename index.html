@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Range Consultancy | Institutional Commercial Property Advisory</title>
+    <title>Range | Enterprise Portfolio Governance & Advisory</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        .hover-lift { transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease; }
-        .hover-lift:hover { transform: translateY(-12px); box-shadow: 0 25px 30px -10px rgba(0,0,0,0.15); }
-        .stick-figure { width: 80px; height: 80px; background: #E5E7EB; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 40px; margin: 0 auto; }
+        .stick-figure { width: 60px; height: 60px; background: #E5E7EB; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; margin: 0 auto; }
+        .data-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: #E5E7EB; border: 1px solid #E5E7EB; }
+        .data-cell { background: white; padding: 2rem; }
     </style>
     <script>
         tailwind.config = {
@@ -22,80 +22,76 @@
         }
     </script>
 </head>
-<body class="bg-white text-tas-ink font-sans antialiased">
+<body class="bg-white text-tas-ink">
 
-    <!-- Header Navigation -->
-    <header class="border-b border-tas-platinum bg-white/90 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 h-24 flex items-center justify-between">
-            <div class="text-sm font-semibold tracking-widest uppercase text-tas-antarctic">Range <span class="font-light text-gray-400">// Consultancy</span></div>
-            <nav class="hidden lg:flex space-x-12 text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500">
-                <a href="#heritage" class="hover:text-tas-ink transition">Heritage</a>
-                <a href="#services" class="hover:text-tas-ink transition">Services</a>
-                <a href="#team" class="hover:text-tas-ink transition">Leadership</a>
-                <a href="#matrix" class="hover:text-tas-ink transition">The Matrix</a>
+    <!-- Header -->
+    <header class="border-b border-tas-platinum sticky top-0 bg-white/95 backdrop-blur z-50">
+        <div class="max-w-7xl mx-auto px-8 h-24 flex items-center justify-between">
+            <div class="text-xl font-bold tracking-tighter">RANGE <span class="text-gray-400 font-light">| ENTERPRISE</span></div>
+            <nav class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500">
+                <a href="#governance">Governance</a>
+                <a href="#lifecycle">Lifecycle</a>
+                <a href="#assets">Assets</a>
+                <a href="#briefing">Contact</a>
             </nav>
-            <a href="#briefing" class="border border-tas-antarctic hover:bg-tas-antarctic hover:text-white px-6 py-3 text-[10px] font-bold tracking-[0.2em] uppercase transition">Confidential Audit</a>
         </div>
     </header>
 
-    <!-- 1. Hero -->
-    <section class="bg-tas-antarctic text-white relative overflow-hidden py-40">
-        <div class="absolute inset-0 opacity-20"><img src="https://images.unsplash.com/photo-1542241638-04f145f3757a?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover"></div>
-        <div class="max-w-7xl mx-auto px-8 relative z-10">
-            <span class="text-[10px] tracking-[0.3em] text-blue-400 uppercase">Fiduciary Tenant Advisory</span>
-            <h1 class="text-5xl md:text-7xl font-serif font-light mt-6 tracking-tight leading-[1.1]">Enterprise-Grade Leasing Strategy.<br><span class="italic text-gray-400">Grounded in Tasmania.</span></h1>
-            <p class="mt-8 text-xl text-gray-300 font-serif max-w-2xl leading-relaxed">We protect corporate footprints, restructure liabilities, and align property assets with your long-term capital strategy.</p>
+    <!-- Hero -->
+    <section class="py-32 bg-tas-antarctic text-white">
+        <div class="max-w-5xl mx-auto px-8">
+            <h1 class="text-6xl md:text-8xl font-serif font-light leading-[0.9]">Total Portfolio<br>Command.</h1>
+            <p class="mt-12 text-xl text-gray-400 max-w-xl">Beyond leasing. We provide end-to-end management of complex corporate footprints—from site acquisition and capital project oversight to documentation governance and lease auditing.</p>
         </div>
     </section>
 
-    <!-- 2. Heritage -->
-    <section id="heritage" class="py-32 max-w-7xl mx-auto px-8 grid lg:grid-cols-12 gap-16 items-center">
-        <div class="lg:col-span-5 hover-lift cursor-pointer"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200" class="border border-tas-platinum shadow-lg"></div>
-        <div class="lg:col-span-7">
-            <h2 class="text-4xl font-serif font-light text-tas-ink mb-8">Built from Experience.</h2>
-            <p class="text-gray-600 text-sm leading-relaxed mb-6">Our founders don't think like landlords. We think like CFOs and Managing Directors. Your lease is not overhead; it is a strategic asset.</p>
-        </div>
-    </section>
-
-    <!-- 3. Leadership (Stick Figures) -->
-    <section id="team" class="py-32 bg-gray-50 text-center">
-        <h2 class="text-4xl font-serif mb-20">The Principals</h2>
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
-            <div class="bg-white p-10 border border-tas-platinum">
-                <div class="stick-figure">👤</div>
-                <h4 class="mt-6 font-bold uppercase tracking-widest text-xs">Director of Strategy</h4>
-                <p class="mt-4 text-[11px] text-gray-500 italic">"Operational efficiency is the cornerstone of every lease negotiation."</p>
+    <!-- Operational Pillars -->
+    <section id="governance" class="py-32 max-w-7xl mx-auto px-8">
+        <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-blue-600 mb-12">Core Governance</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div>
+                <h3 class="text-2xl font-serif mb-4">Capital Projects</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">End-to-end management of fit-outs, refurbishments, and industrial upgrades. We ensure site delivery aligns with operational continuity plans.</p>
             </div>
-            <div class="bg-white p-10 border border-tas-platinum">
-                <div class="stick-figure">👤</div>
-                <h4 class="mt-6 font-bold uppercase tracking-widest text-xs">Head of Portfolio</h4>
-                <p class="mt-4 text-[11px] text-gray-500 italic">"Data-driven defense against predatory market practices."</p>
+            <div>
+                <h3 class="text-2xl font-serif mb-4">Lease & Site Audits</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Deep-dive technical audits of occupancy costs, outgoings, and covenant compliance across your entire national footprint.</p>
+            </div>
+            <div>
+                <h3 class="text-2xl font-serif mb-4">Document Control</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Single-source-of-truth management for property titles, encumbrances, and operational site manuals.</p>
             </div>
         </div>
     </section>
 
-    <!-- 4. Matrix -->
-    <section id="matrix" class="py-32 max-w-7xl mx-auto px-8">
-        <div class="grid md:grid-cols-2 gap-8">
-            <img src="https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&q=80&w=800" class="w-full h-96 object-cover">
-            <div class="grid grid-cols-2 gap-4">
-                <div class="p-8 border border-gray-200">
-                    <p class="text-3xl font-serif">2.9%</p>
-                    <p class="text-[10px] uppercase tracking-widest mt-2">A-Grade Vacancy</p>
-                </div>
-                <div class="p-8 border border-gray-200">
-                    <p class="text-3xl font-serif">5.2%</p>
-                    <p class="text-[10px] uppercase tracking-widest mt-2">CBD Market Tightness</p>
-                </div>
+    <!-- Leadership -->
+    <section id="lifecycle" class="bg-tas-mist py-32">
+        <div class="max-w-7xl mx-auto px-8 text-center">
+            <h2 class="text-4xl font-serif mb-16">Enterprise Principals</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 border border-tas-platinum"><div class="stick-figure mb-6">👤</div><h4 class="font-bold text-xs uppercase tracking-widest">Site Operations</h4></div>
+                <div class="bg-white p-8 border border-tas-platinum"><div class="stick-figure mb-6">👤</div><h4 class="font-bold text-xs uppercase tracking-widest">Project Delivery</h4></div>
+                <div class="bg-white p-8 border border-tas-platinum"><div class="stick-figure mb-6">👤</div><h4 class="font-bold text-xs uppercase tracking-widest">Capital Strategy</h4></div>
             </div>
         </div>
     </section>
 
-    <!-- 5. Footer -->
-    <footer id="briefing" class="py-32 bg-tas-antarctic text-white text-center">
-        <h2 class="text-4xl font-serif font-light mb-10">Ready to audit your footprint?</h2>
-        <a href="mailto:briefings@rangeconsultancy.com.au" class="bg-blue-600 px-12 py-5 text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-blue-600 transition">Book Executive Briefing</a>
-        <div class="mt-20 text-[9px] uppercase tracking-widest opacity-50">Range Consultancy // Rosny Park, Tasmania</div>
+    <!-- Data Matrix -->
+    <section id="assets" class="py-32 max-w-7xl mx-auto px-8">
+        <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-blue-600 mb-12">Lifecycle Analytics</h2>
+        <div class="data-grid">
+            <div class="data-cell"><p class="text-4xl font-serif">120+</p><p class="text-[10px] uppercase mt-2">Annual Site Inspections</p></div>
+            <div class="data-cell"><p class="text-4xl font-serif">85%</p><p class="text-[10px] uppercase mt-2">OPEX Recovery Rate</p></div>
+            <div class="data-cell"><p class="text-4xl font-serif">40k</p><p class="text-[10px] uppercase mt-2">SQM Under Management</p></div>
+            <div class="data-cell"><p class="text-4xl font-serif">0</p><p class="text-[10px] uppercase mt-2">Compliance Gaps</p></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="briefing" class="bg-tas-ink text-white py-20 px-8 text-center">
+        <p class="text-2xl font-serif italic mb-10">Your footprint is the foundation of your enterprise strategy.</p>
+        <a href="mailto:governance@range.com.au" class="border border-white/20 px-10 py-4 text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-tas-ink transition">Request Capability Statement</a>
+        <div class="mt-16 text-[9px] uppercase tracking-widest opacity-30">Range Enterprise Governance // Confidentiality Assured</div>
     </footer>
 
 </body>
