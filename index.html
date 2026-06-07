@@ -3,27 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Range Consultancy | Global Corporate Real Estate Advisory</title>
+    <title>Range Consultancy | Enterprise Commercial Property Strategy</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Premium Editorial Typography Blend -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
-                    },
                     colors: {
-                        mbb: {
-                            navy: '#051229',
-                            slate: '#1E2B41',
-                            cream: '#F8F9FA',
-                            silver: '#E5E7EB',
-                            accent: '#1D4ED8'
+                        brand: {
+                            dark: '#0B0F19',
+                            card: '#161F30',
+                            accent: '#3B82F6',
+                            textMuted: '#94A3B8'
                         }
                     }
                 }
@@ -31,117 +23,135 @@
         }
     </script>
 </head>
-<body class="bg-white text-mbb-navy font-sans antialiased">
+<body class="bg-brand-dark text-slate-100 font-sans antialiased">
 
-    <!-- Minimalist Editorial Navigation -->
-    <header class="border-b border-mbb-silver bg-white/80 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 h-24 flex items-center justify-between">
-            <div class="text-lg font-medium tracking-widest uppercase font-sans text-mbb-navy">
-                Range <span class="font-light text-slate-500">Consultancy</span>
+    <!-- Navigation -->
+    <header class="border-b border-slate-800 bg-brand-dark/90 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-xl font-bold tracking-wider uppercase text-white">
+                Range <span class="text-brand-accent">Consultancy</span>
             </div>
-            <nav class="hidden md:flex space-x-10 text-xs font-medium tracking-widest uppercase text-mbb-slate">
-                <a href="#insights" class="hover:text-mbb-accent transition">Insights</a>
-                <a href="#expertise" class="hover:text-mbb-accent transition">Expertise</a>
-                <a href="#framework" class="hover:text-mbb-accent transition">Methodology</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide text-slate-300">
+                <a href="#about" class="hover:text-white transition">Heritage</a>
+                <a href="#services" class="hover:text-white transition">Services</a>
+                <a href="#data" class="hover:text-white transition">Market Insights</a>
+                <a href="#framework" class="hover:text-white transition">Our Framework</a>
             </nav>
             <div>
-                <a href="#contact" class="border border-mbb-navy hover:bg-mbb-navy hover:text-white text-mbb-navy px-6 py-3 text-xs font-medium tracking-widest uppercase transition inline-block">
-                    Executive Briefing
+                <a href="#contact" class="bg-brand-accent hover:bg-blue-600 text-white px-5 py-2.5 rounded-md text-sm font-medium tracking-wide transition inline-block">
+                    Audit Portfolio
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section (Editorial White Space Focus) -->
-    <section class="max-w-6xl mx-auto px-6 pt-32 pb-24">
-        <div class="max-w-4xl">
-            <span class="text-xs font-semibold tracking-widest text-mbb-accent uppercase block mb-4">Perspective // Capital Architecture</span>
-            <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif tracking-tight text-mbb-navy leading-tight font-medium">
-                Capital Optimization Through Structural Lease Defense.
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 pt-24 pb-20 text-center md:text-left md:flex md:items-center md:justify-between gap-12">
+        <div class="max-w-3xl">
+            <span class="text-xs font-semibold tracking-widest text-brand-accent uppercase bg-blue-500/10 px-3 py-1 rounded border border-blue-500/20">Tasmanian Tenant Advisory</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mt-6 leading-tight">
+                Enterprise-Grade Leasing Strategy. <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Grounded in Tasmania.</span>
             </h1>
-            <p class="mt-8 text-xl md:text-2xl text-slate-600 font-serif italic max-w-3xl leading-relaxed">
-                An analysis of enterprise exposure within constrained commercial asset markets, and the strategic financial mechanics required to protect institutional EBITDA margins.
+            <p class="mt-6 text-lg text-brand-textMuted leading-relaxed max-w-2xl">
+                With Hobart’s premium commercial vacancy squeezed at a critical 5.2%, landlords hold all the cards. Range Consultancy levels the playing field. Founded by enterprise veterans, we protect corporate footprints, restructure commercial liabilities, and align your property portfolio with your market capitalization.
             </p>
-            <div class="mt-12 flex flex-col sm:flex-row gap-6">
-                <a href="#contact" class="bg-mbb-navy hover:bg-mbb-slate text-white text-xs font-semibold tracking-widest uppercase px-8 py-4 transition inline-block text-center">
-                    Connect with a Principal Partner
-                </a>
-                <a href="#insights" class="border border-mbb-silver hover:border-mbb-navy text-mbb-navy text-xs font-semibold tracking-widest uppercase px-8 py-4 transition inline-block text-center">
-                    Review Local Market Matrix
+            <div class="mt-10">
+                <a href="#contact" class="bg-brand-accent hover:bg-blue-600 text-white text-base font-semibold px-8 py-4 rounded transition inline-block shadow-lg shadow-blue-500/10">
+                    Request a Confidential Portfolio Audit
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Corporate Statement (The McKinsey Aesthetic) -->
-    <section class="bg-mbb-cream border-y border-mbb-silver py-24">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12 items-baseline">
-            <div class="text-xs font-semibold tracking-widest uppercase text-mbb-accent">
-                The Advisory Mandate
-            </div>
-            <div class="md:col-span-2">
-                <p class="text-xl md:text-2xl font-serif text-mbb-navy leading-relaxed">
-                    "Range Consultancy operates at the intersection of high-stakes asset procurement and corporate finance strategy. We manage complex physical footprints not as real estate brokers, but as fiduciary stewards of our clients’ balance sheets."
+    <!-- Institutional Heritage -->
+    <section id="about" class="border-y border-slate-800 bg-slate-900/30 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl border-l-4 border-brand-accent pl-6 md:pl-8">
+                <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-white">"We Speak Enterprise Because We’ve Built It."</h2>
+                <p class="mt-4 text-base text-brand-textMuted leading-relaxed">
+                    Range Consultancy wasn't born in a traditional real estate brokerage. Our founders bring a wealth of enterprise-level operational experience, having scaled and managed massive high-pressure footprints across major national sectors. We don't think like landlords, agents, or brokers. We think like Chief Financial Officers, Chief Operating Officers, and Managing Directors.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Firm Capabilities Grid -->
-    <section id="expertise" class="max-w-6xl mx-auto px-6 py-28">
-        <div class="mb-20 border-b border-mbb-silver pb-8">
-            <h2 class="text-3xl font-serif font-medium text-mbb-navy">Primary Capabilities</h2>
-            <p class="text-sm text-slate-500 mt-2 tracking-wide font-sans">Strategic vectors engineered for complex corporate entities.</p>
+    <!-- Services Grid -->
+    <section id="services" class="max-w-7xl mx-auto px-6 py-24">
+        <div class="text-center md:text-left mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-white">Services Across Every Scale of Business</h2>
+            <p class="mt-3 text-brand-textMuted">Corporate strategy built to protect and optimize corporate footprints.</p>
         </div>
         
-        <div class="grid md:grid-cols-2 gap-16">
-            <!-- Pillar 1 -->
-            <div class="border-t-2 border-mbb-navy pt-6">
-                <span class="text-xs font-mono text-slate-400 block mb-2">01 // VALUE RESTRENGTHENING</span>
-                <h3 class="text-xl font-serif font-medium text-mbb-navy mb-4">Portfolio Footprint Optimization</h3>
-                <p class="text-sm text-slate-600 leading-relaxed">
-                    Deploying diagnostic space utilization tracking to uncover systemic operational inefficiencies across multi-site networks. We isolate and eliminate spatial liabilities, driving direct cost-reduction straight into organizational OpEx.
-                </p>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Mid Market Card -->
+            <div class="bg-brand-card border border-slate-800 rounded-lg p-8 hover:border-slate-700 transition">
+                <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-blue-400"></span> Mid-Market & Growing Businesses
+                </h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-base font-semibold text-slate-200">Tenant Advocacy & Site Relocation</h4>
+                        <p class="text-sm text-brand-textMuted mt-1">Stop fighting for leftovers in a low-supply market. We leverage off-market data to find and secure your next asset on your own terms.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-base font-semibold text-slate-200">Lease Restructuring & Renewals</h4>
+                        <p class="text-sm text-brand-textMuted mt-1">Don't just accept a arbitrary year-on-year hike. We step in as your external leasing executives to freeze rents and claw back landlord incentives.</p>
+                    </div>
+                </div>
             </div>
 
-            <!-- Pillar 2 -->
-            <div class="border-t-2 border-mbb-navy pt-6">
-                <span class="text-xs font-mono text-slate-400 block mb-2">02 // BALANCE SHEET MANAGEMENT</span>
-                <h3 class="text-xl font-serif font-medium text-mbb-navy mb-4">EBITDA & Market Capitalization Alignment</h3>
-                <p class="text-sm text-slate-600 leading-relaxed">
-                    Structuring lease configurations to minimize total covenant liabilities. Our financial analysts align property execution with broader corporate maneuvers, preparing corporate entities for public listings, private valuations, or M&A actions.
-                </p>
+            <!-- Enterprise Card -->
+            <div class="bg-brand-card border border-slate-800 rounded-lg p-8 hover:border-slate-700 transition">
+                <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-indigo-400"></span> Enterprise & Multi-Site Portfolios
+                </h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-base font-semibold text-slate-200">Portfolio Footprint Optimization</h4>
+                        <p class="text-sm text-brand-textMuted mt-1">We audit workspace utilization metrics to help you consolidate footprint waste, directly slashing your Operational Expenditure (OpEx).</p>
+                    </div>
+                    <div>
+                        <h4 class="text-base font-semibold text-slate-200">Balance Sheet & Market Cap Alignment</h4>
+                        <p class="text-sm text-brand-textMuted mt-1">We restructure large-scale lease liabilities to optimize EBITDA, positioning your corporate balance sheet favorably for valuations or M&A activity.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Data Matrix (Bain Analytics Style) -->
-    <section id="insights" class="bg-mbb-navy text-white py-28">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="mb-16">
-                <span class="text-xs font-semibold tracking-widest text-blue-400 uppercase block mb-2">Macroeconomic Analysis</span>
-                <h2 class="text-3xl font-serif font-medium">The Commercial Squeeze Matrix</h2>
+    <!-- Data Matrix / Market Trends -->
+    <section id="data" class="bg-slate-900/40 border-t border-slate-800 py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold tracking-tight text-white">The Tasmanian Commercial Matrix</h2>
+                <p class="mt-2 text-brand-textMuted">Contrasting regional physical realities against strategic defensive maneuvers.</p>
             </div>
             
-            <div class="overflow-x-auto">
+            <div class="overflow-x-auto border border-slate-800 rounded-lg">
                 <table class="w-full text-left border-collapse text-sm">
                     <thead>
-                        <tr class="border-b border-slate-700 text-slate-400 text-xs font-medium tracking-widest uppercase">
-                            <th class="pb-6">Asset Spectrum</th>
-                            <th class="pb-6">Market Reality (TAS)</th>
-                            <th class="pb-6">Strategic Positioning</th>
+                        <tr class="bg-slate-900 border-b border-slate-800 text-slate-300 font-medium tracking-wider uppercase text-xs">
+                            <th class="p-4 md:p-5">Asset Class</th>
+                            <th class="p-4 md:p-5">Local Market Reality (TAS)</th>
+                            <th class="p-4 md:p-5">The Range Strategy</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-slate-800 text-slate-300 font-sans">
-                        <tr>
-                            <td class="py-6 font-medium text-white font-serif text-base">A-Grade Corporate Space</td>
-                            <td class="py-6 text-blue-400 font-medium">2.9% Structural Vacancy</td>
-                            <td class="py-6 text-slate-400 leading-relaxed">In-situ reconfiguration modeling designed to optimize active footprints, circumventing high-risk capital relocations.</td>
+                    <tbody class="divide-y divide-slate-800 text-slate-300">
+                        <tr class="hover:bg-slate-900/50 transition">
+                            <td class="p-4 md:p-5 font-semibold text-white">A-Grade Office</td>
+                            <td class="p-4 md:p-5 text-blue-400"><span class="font-bold">2.9% Vacancy Rate.</span> Critically starved of premium corporate space.</td>
+                            <td class="p-4 md:p-5 text-brand-textMuted">Space Optimization: We reconfigure your current square-meterage to completely avoid high-risk, capital-intensive moves.</td>
                         </tr>
-                        <tr>
-                            <td class="py-6 font-medium text-white font-serif text-base">Total CBD Portfolios</td>
-                            <td class="py-6 text-blue-400 font-medium">5.2% Macro Vacancy</td>
-                            <td class="py-6 text-slate-400 leading-relaxed">Off-market asset tracking networks allowing enterprise entities to secure institutional-grade covenants prior to market listing.</td>
+                        <tr class="hover:bg-slate-900/50 transition">
+                            <td class="p-4 md:p-5 font-semibold text-white">Total CBD Office</td>
+                            <td class="p-4 md:p-5 text-blue-400"><span class="font-bold">5.2% Vacancy Rate.</span> Tightest capital city commercial market in Australia.</td>
+                            <td class="p-4 md:p-5 text-brand-textMuted">Aggressive Tenant Representation: Securing off-market premium corporate options before they hit public listings.</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/50 transition">
+                            <td class="p-4 md:p-5 font-semibold text-white">Industrial & Logistics</td>
+                            <td class="p-4 md:p-5 text-indigo-400">High influx of mainland institutional funds buying local assets.</td>
+                            <td class="p-4 md:p-5 text-brand-textMuted">Covenant Defense: Protecting local corporate tenants against aggressive, fund-driven yield optimization strategies.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -149,31 +159,63 @@
         </div>
     </section>
 
-    <!-- Institutional Footer / Engagement Gateway -->
-    <footer id="contact" class="bg-mbb-cream border-t border-mbb-silver pt-28 pb-12">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 mb-20">
-                <div>
-                    <h2 class="text-4xl font-serif font-medium text-mbb-navy leading-tight">Initiate an Institutional Review.</h2>
-                    <p class="mt-4 text-slate-600 text-sm leading-relaxed max-w-md">
-                        All discovery processes, balance sheet extractions, and portfolio reviews are strictly bound by global enterprise non-disclosure protocols.
-                    </p>
-                </div>
-                <div class="flex flex-col justify-end items-start md:items-end">
-                    <a href="mailto:managingpartner@rangeconsultancy.com.au" class="bg-mbb-navy hover:bg-mbb-slate text-white text-xs font-semibold tracking-widest uppercase px-8 py-5 transition inline-block">
-                        Request Executive Briefing
-                    </a>
-                </div>
+    <!-- Operational Roadmap -->
+    <section id="framework" class="max-w-7xl mx-auto px-6 py-24">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-white">The Operational Roadmap</h2>
+            <p class="mt-3 text-brand-textMuted">A systematic framework built to transition liabilities into strategic financial upside.</p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-6 relative">
+            <!-- Step 1 -->
+            <div class="bg-brand-card/60 border border-slate-800 p-6 rounded-lg relative">
+                <span class="text-xs font-semibold uppercase text-brand-accent tracking-wider">01 // Zero Risk</span>
+                <h4 class="text-lg font-bold text-white mt-2 mb-3">Discovery & Ingestion</h4>
+                <p class="text-xs text-brand-textMuted leading-relaxed">We ingest your current lease agreements, square-meter utilization metrics, and high-level corporate financial goals under strict NDA.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="bg-brand-card/60 border border-slate-800 p-6 rounded-lg relative">
+                <span class="text-xs font-semibold uppercase text-purple-400 tracking-wider">02 // EBITDA Focus</span>
+                <h4 class="text-lg font-bold text-white mt-2 mb-3">Scenario Modeling</h4>
+                <p class="text-xs text-brand-textMuted leading-relaxed">Our financial analysts map alternative scenarios, detailing exactly how changing your footprint impacts your balance sheet and valuation.</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="bg-brand-card/60 border border-slate-800 p-6 rounded-lg relative">
+                <span class="text-xs font-semibold uppercase text-emerald-400 tracking-wider">03 // Advocacy</span>
+                <h4 class="text-lg font-bold text-white mt-2 mb-3">High-Stakes Negotiation</h4>
+                <p class="text-xs text-brand-textMuted leading-relaxed">We act as your dedicated executive voice, executing landlord interactions, pushing back on terms, and maximizing incentives.</p>
+            </div>
+            <!-- Step 4 -->
+            <div class="bg-brand-card/60 border border-slate-800 p-6 rounded-lg relative">
+                <span class="text-xs font-semibold uppercase text-amber-400 tracking-wider">04 // Governance</span>
+                <h4 class="text-lg font-bold text-white mt-2 mb-3">Continuous Oversight</h4>
+                <p class="text-xs text-brand-textMuted leading-relaxed">We track shifting market metrics, critical option dates, and upcoming renewal windows so you are consistently ahead of the curve.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / CTA -->
+    <footer id="contact" class="bg-slate-950 border-t border-slate-800 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">Stop letting property liabilities dictate your corporate valuation.</h2>
+            <p class="text-brand-textMuted max-w-xl mx-auto mb-8 text-sm">
+                Whether you manage a single flagship footprint in Hobart or a complex national logistics portfolio, let our enterprise experience defend your bottom line.
+            </p>
+            <div class="mb-16">
+                <a href="mailto:briefings@rangeconsultancy.com.au" class="bg-brand-accent hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded transition inline-block">
+                    Book an Executive Briefing
+                </a>
+                <p class="text-xs text-slate-500 mt-3">All initial discovery consultations are bound by standard corporate NDAs.</p>
             </div>
 
-            <div class="border-t border-mbb-silver pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-slate-400 font-sans tracking-wide">
+            <div class="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
                 <div>
-                    &copy; 2026 <strong>Range Consultancy Pty Ltd</strong>. All Rights Reserved. Private Advisory.
+                    <strong>Range Consultancy Pty Ltd</strong> | Commercial Portfolio Strategy & Tenant Advisory.
                 </div>
-                <div class="flex gap-8">
-                    <span>Principal Office: Rosny Park, TAS</span>
-                    <a href="#" class="hover:text-mbb-navy transition">Regulatory Protocols</a>
-                    <a href="#" class="hover:text-mbb-navy transition">LinkedIn</a>
+                <div class="flex gap-6">
+                    <span>Hobart Office: Rosny Park, TAS</span>
+                    <a href="#" class="hover:text-slate-400 transition">Confidentiality & Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400 transition">LinkedIn</a>
                 </div>
             </div>
         </div>
