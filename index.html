@@ -9,6 +9,7 @@
     <style>
         .hover-lift { transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease; }
         .hover-lift:hover { transform: translateY(-12px); box-shadow: 0 25px 30px -10px rgba(0,0,0,0.15); }
+        .stick-figure { width: 80px; height: 80px; background: #E5E7EB; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 40px; margin: 0 auto; }
     </style>
     <script>
         tailwind.config = {
@@ -30,98 +31,71 @@
             <nav class="hidden lg:flex space-x-12 text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500">
                 <a href="#heritage" class="hover:text-tas-ink transition">Heritage</a>
                 <a href="#services" class="hover:text-tas-ink transition">Services</a>
+                <a href="#team" class="hover:text-tas-ink transition">Leadership</a>
                 <a href="#matrix" class="hover:text-tas-ink transition">The Matrix</a>
-                <a href="#roadmap" class="hover:text-tas-ink transition">Roadmap</a>
             </nav>
             <a href="#briefing" class="border border-tas-antarctic hover:bg-tas-antarctic hover:text-white px-6 py-3 text-[10px] font-bold tracking-[0.2em] uppercase transition">Confidential Audit</a>
         </div>
     </header>
 
-    <!-- 1. Hero Section -->
+    <!-- 1. Hero -->
     <section class="bg-tas-antarctic text-white relative overflow-hidden py-40">
-        <div class="absolute inset-0 opacity-25 mix-blend-luminosity">
-            <img src="https://images.unsplash.com/photo-1506974210756-8e1b8985d348?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover">
-        </div>
+        <div class="absolute inset-0 opacity-20"><img src="https://images.unsplash.com/photo-1542241638-04f145f3757a?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover"></div>
         <div class="max-w-7xl mx-auto px-8 relative z-10">
             <span class="text-[10px] tracking-[0.3em] text-blue-400 uppercase">Fiduciary Tenant Advisory</span>
             <h1 class="text-5xl md:text-7xl font-serif font-light mt-6 tracking-tight leading-[1.1]">Enterprise-Grade Leasing Strategy.<br><span class="italic text-gray-400">Grounded in Tasmania.</span></h1>
-            <p class="mt-8 text-xl text-gray-300 font-serif max-w-2xl leading-relaxed">With Hobart’s premium commercial vacancy squeezed at 5.2%, landlords hold all the cards. Range Consultancy levels the playing field. Founded by enterprise veterans, we protect corporate footprints, restructure liabilities, and align property with your market capitalization.</p>
-            <a href="#briefing" class="mt-12 bg-white text-tas-antarctic px-10 py-5 text-[10px] font-bold tracking-[0.2em] uppercase inline-block hover:bg-tas-mist transition">Request a Confidential Portfolio Audit</a>
+            <p class="mt-8 text-xl text-gray-300 font-serif max-w-2xl leading-relaxed">We protect corporate footprints, restructure liabilities, and align property assets with your long-term capital strategy.</p>
         </div>
     </section>
 
-    <!-- 2. Institutional Heritage -->
+    <!-- 2. Heritage -->
     <section id="heritage" class="py-32 max-w-7xl mx-auto px-8 grid lg:grid-cols-12 gap-16 items-center">
-        <div class="lg:col-span-5 hover-lift cursor-pointer">
-            <div class="border border-tas-platinum p-4 bg-tas-mist">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200" class="grayscale contrast-125">
-            </div>
-        </div>
+        <div class="lg:col-span-5 hover-lift cursor-pointer"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200" class="border border-tas-platinum shadow-lg"></div>
         <div class="lg:col-span-7">
-            <h2 class="text-4xl font-serif font-light text-tas-ink mb-8">"We Speak Enterprise Because We’ve Built It."</h2>
-            <p class="text-gray-600 text-sm leading-relaxed mb-6">Range Consultancy wasn't born in a traditional brokerage. Our founders bring enterprise-level operational experience, having scaled and managed high-pressure footprints across major national sectors.</p>
-            <div class="bg-tas-mist p-6 border-l-4 border-tas-antarctic">
-                <p class="font-serif italic text-tas-ink text-lg">"We don't think like landlords or brokers. We think like CFOs, COOs, and Managing Directors. Your lease is not just overhead; it's a strategic asset."</p>
+            <h2 class="text-4xl font-serif font-light text-tas-ink mb-8">Built from Experience.</h2>
+            <p class="text-gray-600 text-sm leading-relaxed mb-6">Our founders don't think like landlords. We think like CFOs and Managing Directors. Your lease is not overhead; it is a strategic asset.</p>
+        </div>
+    </section>
+
+    <!-- 3. Leadership (Stick Figures) -->
+    <section id="team" class="py-32 bg-gray-50 text-center">
+        <h2 class="text-4xl font-serif mb-20">The Principals</h2>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+            <div class="bg-white p-10 border border-tas-platinum">
+                <div class="stick-figure">👤</div>
+                <h4 class="mt-6 font-bold uppercase tracking-widest text-xs">Director of Strategy</h4>
+                <p class="mt-4 text-[11px] text-gray-500 italic">"Operational efficiency is the cornerstone of every lease negotiation."</p>
+            </div>
+            <div class="bg-white p-10 border border-tas-platinum">
+                <div class="stick-figure">👤</div>
+                <h4 class="mt-6 font-bold uppercase tracking-widest text-xs">Head of Portfolio</h4>
+                <p class="mt-4 text-[11px] text-gray-500 italic">"Data-driven defense against predatory market practices."</p>
             </div>
         </div>
     </section>
 
-    <!-- 3. Services for Every Scale -->
-    <section id="services" class="bg-gray-50 py-32 border-y border-gray-100">
-        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-8">
-            <div class="group bg-white p-12 border border-gray-200 hover:border-blue-600 transition duration-500 cursor-pointer">
-                <h3 class="text-2xl font-serif mb-4 group-hover:text-blue-600">Mid-Market Innovation</h3>
-                <p class="text-sm text-gray-500 mb-6 leading-relaxed">High-touch tenant advocacy for growing firms. We leverage off-market data networks to isolate and secure your next site on your own terms.</p>
-                <div class="h-px w-10 bg-gray-300 group-hover:bg-blue-600 transition"></div>
-            </div>
-            <div class="group bg-white p-12 border border-gray-200 hover:border-blue-600 transition duration-500 cursor-pointer">
-                <h3 class="text-2xl font-serif mb-4 group-hover:text-blue-600">Enterprise Defense</h3>
-                <p class="text-sm text-gray-500 mb-6 leading-relaxed">Multi-site portfolio optimization. We audit utilization metrics to slash operational waste and restructure liabilities to optimize EBITDA.</p>
-                <div class="h-px w-10 bg-gray-300 group-hover:bg-blue-600 transition"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. The Data Matrix -->
+    <!-- 4. Matrix -->
     <section id="matrix" class="py-32 max-w-7xl mx-auto px-8">
-        <h2 class="text-4xl font-serif font-light mb-16">The Tasmanian Landscape Matrix</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="p-8 border border-gray-200 hover:bg-tas-antarctic hover:text-white transition duration-500">
-                <p class="text-[10px] uppercase tracking-widest opacity-60">A-Grade Office</p>
-                <p class="text-3xl font-serif my-4">2.9% Vacancy</p>
-                <p class="text-[11px] opacity-70 leading-relaxed">Critically starved. We deploy tactical space consolidation to avoid market premiums.</p>
-            </div>
-            <div class="p-8 border border-gray-200 hover:bg-tas-antarctic hover:text-white transition duration-500">
-                <p class="text-[10px] uppercase tracking-widest opacity-60">CBD Market</p>
-                <p class="text-3xl font-serif my-4">5.2% Vacancy</p>
-                <p class="text-[11px] opacity-70 leading-relaxed">Tightest in Australia. We utilize shadow-market intelligence to find your next HQ.</p>
-            </div>
-            <div class="p-8 border border-gray-200 hover:bg-tas-antarctic hover:text-white transition duration-500">
-                <p class="text-[10px] uppercase tracking-widest opacity-60">Industrial</p>
-                <p class="text-3xl font-serif my-4">Covenant Risk</p>
-                <p class="text-[11px] opacity-70 leading-relaxed">Interstate funds are aggressive. We enforce rigid covenant protection for local tenants.</p>
+        <div class="grid md:grid-cols-2 gap-8">
+            <img src="https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&q=80&w=800" class="w-full h-96 object-cover">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="p-8 border border-gray-200">
+                    <p class="text-3xl font-serif">2.9%</p>
+                    <p class="text-[10px] uppercase tracking-widest mt-2">A-Grade Vacancy</p>
+                </div>
+                <div class="p-8 border border-gray-200">
+                    <p class="text-3xl font-serif">5.2%</p>
+                    <p class="text-[10px] uppercase tracking-widest mt-2">CBD Market Tightness</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 5. Operational Roadmap -->
-    <section id="roadmap" class="bg-tas-mist py-32 border-t border-tas-platinum">
-        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-4 gap-12">
-            <div><span class="text-5xl font-serif text-gray-300">01</span><h4 class="mt-4 font-bold tracking-widest uppercase text-xs">Discovery</h4><p class="text-[11px] mt-2 text-gray-500">14-day zero-risk data ingestion.</p></div>
-            <div><span class="text-5xl font-serif text-gray-300">02</span><h4 class="mt-4 font-bold tracking-widest uppercase text-xs">Modeling</h4><p class="text-[11px] mt-2 text-gray-500">EBITDA focus & scenario testing.</p></div>
-            <div><span class="text-5xl font-serif text-gray-300">03</span><h4 class="mt-4 font-bold tracking-widest uppercase text-xs">Negotiation</h4><p class="text-[11px] mt-2 text-gray-500">Frontline executive advocacy.</p></div>
-            <div><span class="text-5xl font-serif text-gray-300">04</span><h4 class="mt-4 font-bold tracking-widest uppercase text-xs">Oversight</h4><p class="text-[11px] mt-2 text-gray-500">Continuous governance & review.</p></div>
-        </div>
-    </section>
-
-    <!-- 6. Footer -->
-    <footer id="briefing" class="py-32 bg-tas-antarctic text-white text-center relative overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1541462608141-ad4979e408c9?auto=format&fit=crop&q=80&w=2000" class="absolute inset-0 w-full h-full object-cover opacity-10">
-        <div class="max-w-3xl mx-auto px-8 relative z-10">
-            <h2 class="text-4xl font-serif font-light mb-10">Stop letting property liabilities dictate your valuation.</h2>
-            <a href="mailto:briefings@rangeconsultancy.com.au" class="bg-blue-600 px-12 py-5 text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-blue-600 transition">Book Executive Briefing</a>
-            <div class="mt-20 text-[9px] uppercase tracking-widest opacity-50">Range Consultancy Pty Ltd // Rosny Park, Tasmania // Bound by Strict NDAs</div>
-        </div>
+    <!-- 5. Footer -->
+    <footer id="briefing" class="py-32 bg-tas-antarctic text-white text-center">
+        <h2 class="text-4xl font-serif font-light mb-10">Ready to audit your footprint?</h2>
+        <a href="mailto:briefings@rangeconsultancy.com.au" class="bg-blue-600 px-12 py-5 text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-blue-600 transition">Book Executive Briefing</a>
+        <div class="mt-20 text-[9px] uppercase tracking-widest opacity-50">Range Consultancy // Rosny Park, Tasmania</div>
     </footer>
 
 </body>
