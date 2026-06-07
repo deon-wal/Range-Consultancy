@@ -21,6 +21,40 @@
             }
         }
     </script>
+
+    <style>
+    /* Interaction: Hover Scale Effect */
+    .hover-scale { transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+    .hover-scale:hover { transform: scale(1.02); cursor: pointer; }
+
+    /* Interaction: Stick Figure Bio Template */
+    .stick-figure { 
+        width: 60px; height: 60px; background: #F4F6F8; border-radius: 50%; 
+        display: flex; align-items: center; justify-content: center; 
+        font-size: 30px; margin: 0 auto; border: 1px solid #E5E7EB;
+    }
+
+    /* Interaction: Scroll Reveal */
+    .reveal-on-scroll { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+    .reveal-on-scroll.active { opacity: 1; transform: translateY(0); }
+
+    /* Interaction: Data Cell Highlight */
+    .data-cell { transition: background 0.3s, color 0.3s; }
+    .data-cell:hover { background: #08111E; color: white; }
+</style>
+
+    <script>
+    // Interaction: Trigger reveal animation on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+</script>
 </head>
 <body class="bg-white text-tas-ink">
 
@@ -74,6 +108,15 @@
                 <div class="bg-white p-8 border border-tas-platinum"><div class="stick-figure mb-6">👤</div><h4 class="font-bold text-xs uppercase tracking-widest">Capital Strategy</h4></div>
             </div>
         </div>
+        <div id="team" class="grid md:grid-cols-3 gap-8 py-16">
+    <!-- Wrap each bio in 'reveal-on-scroll' for the entrance effect -->
+    <div class="reveal-on-scroll bg-white p-8 border border-slate-200 hover-scale">
+        <div class="stick-figure mb-6">👤</div>
+        <h4 class="font-bold text-xs uppercase tracking-widest text-center">Site Operations</h4>
+        <p class="text-[10px] text-slate-500 mt-2 text-center">Tasmanian Portfolio Lead</p>
+    </div>
+    <!-- Repeat for other team members -->
+</div>
     </section>
 
     <!-- Data Matrix -->
